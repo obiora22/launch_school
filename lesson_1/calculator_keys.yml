@@ -1,0 +1,8 @@
+# calculator.yml
+
+en:
+  welcome: 'Welcome to a simple calculator program!'
+  user_prompt: 'Please enter a number:'
+es:
+  welcome: "Bienvenido a la calculadora! Entre su nombre:"
+  user_prompt: "por favor entre en un número:"
