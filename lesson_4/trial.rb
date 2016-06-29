@@ -25,26 +25,25 @@
 # end
 #
 # find_vunerable_square(board)
-require 'pry'
-def calculate_hand(hand)
-  card_values = hand.map { |card| card[1]}
-  sum = 0
-  card_values.each do |value|
-    if value == 'J' || value == 'Q' || value == 'K' # value.to_i == 0
-      sum += 10
-    elsif value == 'A'
-      sum += 11
-    else
-      binding.pry
-      sum += value.to_i
-    end
-  end
 
-  # correct for aces
-  card_values.select { |value| value == 'A'}.count.times do
-    sum -= 10 if sum > 21
-  end
-  return sum
+# def prime?(num)
+#    prime = true
+#   (2..num-1).each do |i|
+#     if  num % i == 0
+#       prime = false
+#     end
+#   end
+#   prime
+# end
+require 'prime'
+(1..15).each do |n|
+  puts n if n.prime?
 end
-hand = [["Hearts", 11], ["Diamonds", 10], ["Spades", 3]]
-puts calculate_hand(hand)
+
+a = [1,2,3,4,5,6,7,8]
+
+a.select { |n| n < 6}
+
+a.each do |n|
+  put n
+end
